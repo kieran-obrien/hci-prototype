@@ -68,7 +68,8 @@ html[data-theme="dark"] {
 }
 
 /* Ensure body fills gradient area and content remains readable */
-html, body {
+html,
+body {
   height: 100%;
 }
 body {

@@ -7,8 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen">
-        <header className="w-full p-4 flex justify-between items-center">
-        </header>
+        <header className="w-full p-4 flex justify-between items-center"></header>
 
         <main className="p-4">
           <Routes>
@@ -21,5 +20,5 @@ function App() {
     </BrowserRouter>
   );
 }
-1
+1;
 export default App;

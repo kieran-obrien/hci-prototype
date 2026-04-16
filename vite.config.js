@@ -1,9 +1,8 @@
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-  base: 'https://github.com/kieran-obrien/hci-prototype'
-})
+  plugins: [tailwindcss()],
+  // Use root base during development to avoid cross-origin requests
+  base: "/",
+});
