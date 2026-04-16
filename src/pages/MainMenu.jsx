@@ -6,8 +6,9 @@ export default function MainMenu() {
   const theme = getTheme();
 
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-5xl mx-auto rela">
       <h1 className="my-10 text-6xl font-bold ">Corton Clicks</h1>
+      <img src="/logo-Photoroom.png" alt="Screenshot of the game" className="mb-10 absolute top-15 right-96 w-96 h-auto" />
       <div className="divider w-1/2"></div>
       <div className="flex flex-col sm:flex-row justify-start gap-10 items-start w-full">
         <button
