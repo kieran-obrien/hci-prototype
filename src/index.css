@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --focus-ring: 3px;
+}
+
+/* root font-size controlled by settings (px) */
+html {
+  font-size: 16px;
+}
+
+/* Accessibility / color-blind mode: higher contrast, stronger outlines */
+.cb-mode {
+  filter: contrast(1.15) saturate(1.05);
+}
+
+.cb-mode .btn {
+  border-width: 2px;
+}
+
+.cb-mode .chat-bubble {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.03)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cb-mode img {
+  outline: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Dyslexic-friendly font mode (uses Lexend as a readable, dyslexia-friendly font) */
+.dyslexic {
+  font-family:
+    "Lexend",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  letter-spacing: 0.01em;
+  word-spacing: 0.02em;
+}
+
+/* Increase focus visibility */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 var(--focus-ring) rgba(99, 102, 241, 0.6);
+}
+
+/* Theme gradients applied to page background */
+html[data-theme="light"] {
+  background: linear-gradient(135deg, #e6f2ff 0%, #d7eef8 40%, #fff1e6 100%);
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+html[data-theme="dark"] {
+  background: linear-gradient(135deg, #031428 0%, #053045 45%, #071e2b 100%);
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+/* Ensure body fills gradient area and content remains readable */
+html, body {
+  height: 100%;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* console toggle button */
+.console-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 80;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+}
+
+/* Sliding console panel (bottom-right) */
+.console-panel {
+  position: fixed;
+  right: 1rem;
+  bottom: 5.5rem; /* sits above the toggle button */
+  z-index: 70;
+  transition:
+    transform 320ms cubic-bezier(0.2, 0.9, 0.2, 1),
+    opacity 220ms ease;
+  will-change: transform, opacity;
+}
+.console-hidden {
+  transform: translateY(16px) translateX(8px) scale(0.97);
+  opacity: 0;
+  pointer-events: none;
+}
+.console-visible {
+  transform: translateY(0) translateX(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Make mockup-phone more phone-like (tall and narrow) */
+.mockup-phone.custom-phone {
+  /* increased by ~1.5x from 220x480 */
+  width: 330px;
+  height: 720px;
+}
+.mockup-phone.custom-phone .mockup-phone-display {
+  height: calc(100% - 56px);
+}
