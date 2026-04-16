@@ -5,4 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: 'https://github.com/kieran-obrien/hci-prototype'
 })
