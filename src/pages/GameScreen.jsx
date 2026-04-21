@@ -46,7 +46,7 @@ export default function GameScreen() {
                 <div className="chat chat-start">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Game controller avatar" src="/image.png" />
+                      <img alt="Game controller avatar" src="/hci-prototype/image.png" />
                     </div>
                   </div>
                   <div className="chat-header">
@@ -60,7 +60,7 @@ export default function GameScreen() {
                 <div className="chat chat-end">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Player avatar" src="/louis.png" />
+                      <img alt="Player avatar" src="/hci-prototype/louis.png" />
                     </div>
                   </div>
                   <div className="chat-header">
@@ -74,7 +74,7 @@ export default function GameScreen() {
                 <div className="chat chat-start">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Game controller avatar" src="/image.png" />
+                      <img alt="Game controller avatar" src="/hci-prototype/image.png" />
                     </div>
                   </div>
                   <div className="chat-header">
@@ -88,7 +88,7 @@ export default function GameScreen() {
                 <div className="chat chat-end">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Player avatar" src="/louis.png" />
+                      <img alt="Player avatar" src="/hci-prototype/louis.png" />
                     </div>
                   </div>
                   <div className="chat-header">
@@ -102,7 +102,7 @@ export default function GameScreen() {
                 <div className="chat chat-start">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Game controller avatar" src="/image.png" />
+                      <img alt="Game controller avatar" src="/hci-prototype/image.png" />
                     </div>
                   </div>
                   <div className="chat-header">
@@ -116,7 +116,7 @@ export default function GameScreen() {
                 <div className="chat chat-end">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Player avatar" src="/louis.png" />
+                      <img alt="Player avatar" src="/hci-prototype/louis.png" />
                     </div>
                   </div>
                   <div className="chat-header">
@@ -130,7 +130,7 @@ export default function GameScreen() {
                 <div className="chat chat-start">
                   <div className="chat-image avatar">
                     <div className="w-10 rounded-full">
-                      <img alt="Game controller avatar" src="/image.png" />
+                      <img alt="Game controller avatar" src="/hci-prototype/image.png" />
                     </div>
                   </div>
                   <div className="chat-header">
