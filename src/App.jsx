@@ -5,7 +5,7 @@ import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/hci-prototype">
       <div className="min-h-screen">
         <header className="w-full p-4 flex justify-between items-center"></header>
 
